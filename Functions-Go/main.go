@@ -5,6 +5,7 @@ import (
 	"math"
 	"strings"
 )
+var nickName = "Manu"
 func sayGreetings(name string) {
 	fmt.Printf("Hello %s\n", name)
 }
@@ -52,4 +53,12 @@ func main() {
 	name := "Gaurav Soni"
 	initial1, initial2 := getInitials(name)
 	fmt.Println(initial1, initial2)
+	for _,value := range points {
+		fmt.Println(value)
+	}
+	for _, value := range names {
+		sayGreetings(value)
+	}
+	fmt.Println("Score is ", score)
+	printNickName()
 }
